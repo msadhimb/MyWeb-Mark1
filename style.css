@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 100000;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  padding: 250px 0;
+  margin-top: -100px;
+  position: relative;
+}
+
+.jumbotron .textJumbotron,
+.jumbotron .container {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 10), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4,
+.jumbotron .display-4 span {
+  margin-top: -100px;
+  font-size: 50px;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: 1s;
+}
+
+.jumbotron .lead {
+  font-size: 12px;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: 1s;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 700;
+}
+
+.textJumbotron {
+  width: 50%;
+}
+
+/* Content */
+.content {
+  margin-top: -200px;
+  opacity: 0;
+  transform: translate(0, -100px);
+  transition: 1s;
+  position: relative;
+  z-index: 1;
+}
+
+.content-child {
+  width: 150px;
+  border: 1px solid white;
+  padding: 5px 13px;
+  margin: 0 5px;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  background: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.content-child:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Design */
+.design-child {
+  position: relative;
+  z-index: 1;
+  margin-top: -80px;
+  overflow: hidden;
+  width: 350px;
+  height: 0;
+  opacity: 0;
+  background-color: black;
+  margin-bottom: 100px;
+  transition: 1s ease-in-out;
+}
+
+.design-child.designChildMuncul {
+  margin-top: -50px;
+  margin-bottom: 100px;
+  height: 200px;
+  opacity: 1;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.design-child .textDesign {
+  display: flex;
+  position: relative;
+  z-index: 10000;
+  color: white;
+  opacity: 0;
+  justify-content: center;
+  text-align: center;
+  margin-top: -140px;
+  font-family: "Viga", sans-serif 2px;
+  font-weight: 200;
+  transform: translate(0, -50px);
+  transition: 1s;
+}
+
+.design-child .textDesign.textMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.web-design {
+  position: relative;
+  width: inherit;
+  height: 200px;
+  margin-left: -12px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  transition: 1s;
+}
+
+.web-design.gede {
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+
+/* About */
+.aboutContent {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.container .textAbout {
+  padding: 0 0;
+}
+
+.pKiri {
+  transform: translate(-100px, 0);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.pKanan {
+  transform: translate(0, -100px);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.profile {
+  transform: translate(100px, 0);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.aboutContentChild1 p {
+  font-size: 12px;
+}
+.aboutContentChild2 img {
+  width: 30vh;
+}
+
+/* Pendidikan */
+.pendidikan {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  transition: 1s;
+}
+
+.pendidikan .container {
+  margin-top: -100px;
+}
+
+.pendidikan .container .row .col h2 {
+  margin-bottom: 50px;
+}
+
+.sekolah {
+  transition: 0.5s ease-in-out;
+}
+.sekolah:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.pendidikan .card {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.pendidikan .card-body {
+  font-size: 12px;
+}
+
+.textHeader {
+  margin-top: 50px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 40px;
+  transform: scale(2);
+  opacity: 0;
+  font-family: "Viga", sans-serif 2px;
+  transition: 1s ease-in-out;
+}
+
+.textPendidikan {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+}
+
+.sekolahParent {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Jquery Class */
+/* Jumbotron dan Button */
+
+/* Muncul */
+/* Jumbotron dan tombol design*/
+.jumbotron .textJumbotron.jMuncul,
+.content.jMuncul {
+  opacity: 0;
+}
+/* About */
+.pKiri.aboutMuncul,
+.pKanan.aboutMuncul,
+.profile.aboutMuncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+/* Pendidikan */
+.textPendidikan.textPendidkikanMuncul {
+  display: flex;
+  opacity: 1;
+}
+.textHeader.textHeaderMuncul {
+  transform: scale(1);
+  opacity: 1;
+}
+.sekolahParent.sekolahParentMuncul {
+  opacity: 1;
+}
+
+/* Contact */
+#Contact {
+  position: relative;
+  z-index: 3;
+}
+
+/* Geser */
+/* Jumbotron */
+.jumbotron .display-4.jGeser,
+.jumbotron .display-4 span.jGeser,
+.jumbotron .lead.jGeser {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* Tombol Design */
+.content.tGeser {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (min-width: 772px) {
+  /* Jumbotron */
+  .jumbotron {
+    margin-top: -100px;
+  }
+
+  .jumbotron .display-4,
+  .jumbotron .display-4 span {
+    margin-top: 0;
+    padding: 10px 0;
+  }
+
+  .jumbotron .lead {
+    font-size: 18px;
+  }
+
+  /* Design */
+  .design-child {
+    margin-top: -100px;
+    width: 420px;
+    height: 0;
+    opacity: 0;
+    margin: 0 10px;
+  }
+
+  .design-child.designChildMuncul {
+    margin-top: -80px;
+    height: 200px;
+    opacity: 1;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* About */
+  .aboutContent {
+    margin-bottom: 150px;
+  }
+
+  .container .textAbout {
+    margin-top: 30px;
+    padding: 15px 0;
+  }
+
+  .aboutContentChild1 p {
+    font-size: 15px;
+  }
+
+  .aboutContentChild2 img {
+    width: 100vh;
+  }
+
+  /* Pendidikan */
+  .pendidikan .card {
+    width: 320px;
+  }
+
+  .textHeader {
+    margin-top: 0px;
+    font-size: 50px;
+  }
+
+  .textPendidikan {
+    font-size: 14px;
+    text-align: left;
+  }
+}

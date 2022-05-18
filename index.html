@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+
+    <title>WKWKWK WEB</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Salman <br> <span style="font-weight: 500; margin-left: 20px;">Adhim</span> </a>
+        <button class="navbar-toggler nav-link btn" id="OpenMenu">
+          <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header text-white">
+          <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">
+            Hamburger Menu
+          </h5>
+          <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Pendidikan">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">In case if you want to contact me</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section id="Home">
+      <div class="jumbotron jumbotron-fluid" style="background-image: url(gambar/background1.jpg!d);">
+        <div class="container text-white text-center textJumbotron">
+          <h1 class="display-4">Salman <span>Adhim</span></h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere id cumque repellendus officiis, voluptatem aliquam dolor dolores soluta optio ullam distinctio asperiores nisi fuga atque placeat ratione saepe eveniet
+            nostrum enim vitae laudantium omnis, reiciendis incidunt. Minus, temporibus voluptatem, doloremque aliquid et animi dignissimos obcaecati voluptatum a, modi qui?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Content -->
+    <section id="Content">
+      <div class="container d-flex justify-content-center">
+        <div id="tombolDesign" class="content">
+          <button class="content-child" type="button">Web Design</button>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Content -->
+
+    <!-- Design -->
+    <section id="Design">
+      <div id="myDesign" class="container d-flex justify-content-center">
+        <div class="design row justify-content-center">
+          <div class="design-child col-lg-4 text-center">
+            <button class="web-design" style="background-image: url(webDesign/1.PNG)" onclick="window.location.href='http://yourhead.epizy.com/'"></button>
+            <h4 id="textDesign" class="textDesign">
+              Simple E-Comerce <br />
+              by Muhamad Salman Adhim Baqy
+            </h4>
+          </div>
+          <div class="design-child col-lg-4">
+            <button class="web-design" style="background-image: url('webDesign/2.PNG')" onclick="window.location.href='Design/Bootstrap Portfolio/index.html'"></button>
+            <h4 id="textDesign" class="textDesign">My Portfolio</h4>
+          </div>
+          <div class="design-child col-lg-4">
+            <button class="web-design" style="background-image: url('webDesign/3.PNG')" onclick="window.location.href='Design/Swiper Music/index.html'"></button>
+            <h4 id="textDesign" class="textDesign">
+              Simple Playlist <br />
+              by Muhamad Salman Adhim Baqy
+            </h4>
+          </div>
+          <div class="design-child design-child01 col-lg-4">
+            <button class="web-design" style="background-image: url('webDesign/4.PNG')" onclick="window.location.href='Design/Gerhana Matahari/index.html'"></button>
+            <h4 id="textDesign" class="textDesign">
+              Eclipse <br />
+              by Muhamad Salman Adhim Baqy
+            </h4>
+          </div>
+          <div class="design-child design-child01 col-lg-4">
+            <button class="web-design" style="background-image: url('webDesign/5.PNG')" onclick="window.location.href='Design/3D Kalkulator/index.html'"></button>
+            <h4 id="textDesign" class="textDesign">
+              Calculator <br />
+              by Online Tutorial
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Design -->
+
+    <!-- About -->
+    <section id="About">
+      <div class="container aboutContent ">
+        <div class="col-lg-12 text-center textAbout">
+          <h2>About</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="aboutContentChild1 row col-lg-8 text-center">
+          <div class="col-lg-6">
+            <p class="pKiri">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit cum quam ipsam sint natus nostrum perspiciatis. Earum impedit eius qui labore odit facilis tempora assumenda recusandae, dolores non adipisci veritatis sunt
+              aspernatur, vero quos doloribus! Corrupti dolorem eveniet quasi rerum illo voluptatibus suscipit libero temporibus repellendus perferendis, ducimus obcaecati expedita sapiente architecto ipsum quae? Cum ducimus ipsam eligendi
+              illo quasi velit itaque sit, eius minima explicabo, vitae minus, possimus dolorum quisquam? Quae illum, repellendus magni minus itaque architecto nobis tenetur? Rem tenetur fuga doloribus repellat ipsam ducimus amet, sapiente
+              rerum animi voluptatem voluptatibus nam culpa, laudantium officia nostrum quaerat illo!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p class="pKanan">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis dolores soluta, hic unde nihil quia recusandae labore rem magnam odit in molestiae eligendi beatae harum illum esse, dolorum atque sequi ipsam optio
+              natus! Ullam sit asperiores voluptatem maxime magnam, eum corporis tempore, repellat enim, eaque ipsam dolor? Ex et quos, nobis natus obcaecati nulla dolore excepturi possimus, ipsum accusantium nesciunt soluta iure adipisci
+              asperiores inventore delectus facilis. Dicta provident harum explicabo possimus cum facere ab rem tempora labore sit, culpa sapiente ea quam eligendi consectetur, ratione vitae beatae numquam magnam. Iste quae pariatur porro
+              earum possimus mollitia architecto ipsum?
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 aboutContentChild2 justify-content-center text-center">
+          <img src="webDesign/profil.jpg" alt="" class="img-fluid rounded mx-auto profile" />
+        </div>
+      </div>
+    </section>
+    
+  <!-- Akhir About -->
+
+  <!-- Jumbotron Pendidikan -->
+  <section id="Pendidikan">
+    <div class="jumbotron jumbotron-fluid pendidikan d-flex align-items-center" style="background-image: url(gambar/background.jpg);">
+      <div class="container justify-content-center">
+        <div class="row text-white justify-content-center">
+          <div class="col">
+            <h2 class="textHeader text-center ">Pendidikan</h2>
+          </div>
+        </div>
+        <div class="row justify-content-evenly sekolahParent">
+          <div class="col-md-3 mb-4 sekolah">
+            <div class="card p-3">
+              <img src="pendidikan/smp.jpg" alt="smp" class="rounded mx-auto d-block img-fluid" />
+              <div class="card-body">
+                <p class="card-text text-center" style="font-size: 18px;">Dian Nuswantoro University</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 text-white textPendidikan">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eligendi suscipit minus molestiae dicta et! Culpa quos deleniti asperiores inventore sapiente, ut, praesentium dolore quas atque fuga nesciunt iste tempore est. Sunt ratione deleniti laudantium, repellendus blanditiis laborum non quia recusandae qui rerum officia? Dolorum doloremque eius sed! Quidem, amet reiciendis. Esse reprehenderit quos culpa veniam tempore harum officiis commodi distinctio ipsam ipsa quae vero odio illum aperiam ut quasi facere rerum voluptatum rem incidunt voluptatem nostrum, nemo nesciunt aliquam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Jumbotron Pendidikan -->
+
+  <!-- Contact Me -->
+  <section id="Contact">
+    <div class="container text-center pt-5 mb-5">
+      <div class="row">
+        <div class="col p-3">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form name="mywebForm">
+            <div class="mb-3 text-start">
+              <label for="exampleInputName" class="form-label">Nama Lengkap</label>
+              <input class="form-control" id="exampleInputName" aria-describedby="name" name="nama"/>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"/>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="exampleFormControlTextarea1" class="form-label">Coment</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="pesan"></textarea>
+            </div>
+            <div class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+              <strong>Hohohoho</strong> terkirim lhooo !
+            </div>
+            <button type="submit" class="btn btn-primary btnKirim ">Submit</button>
+            <button class="btn btn-primary btnLoading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Contact Me -->
+
+  <!-- Footer -->
+  <section id="Footer">
+   <footer class="pt-4 pb-2 text-center">
+      <div class="row footer">
+        <div class="col-lg-4">
+          <h2 style="font-weight: 200;">Salman <br>
+            <span style="font-weight: 500; margin-left: 50px;">
+             Adhim
+            </span>
+          </h2>
+        </div>
+        <div class="col-lg-4">
+          <p>Muhamad Salman Adhim Baqy, © 2021, All rights reserved.</p>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://www.instagram.com/apwhabl.png/">
+            <img src="gambar/instagram.png" alt="ig" style="width: 50px; margin-top: 10px;">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Akhir Footer -->
+
+    <!-- JQuery -->
+    <script src="jQuery.js"></script>
+
+    <!-- Java Script -->
+    <script src="script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
