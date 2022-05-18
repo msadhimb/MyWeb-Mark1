@@ -1,0 +1,53 @@
+body {
+  min-height: 2000px;
+  width: 100%;
+}
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #fc8181;
+}
+
+#pendidikan {
+  margin-top: -2px;
+  background-color: #fc8181;
+}
+
+.card img {
+  padding-top: 5px;
+}
+
+.sekolah:hover {
+  width: 40%;
+  transition: 1s;
+}
+
+/* Jquery */
+
+/* Jumbotron */
+.jumbotron .display-4,
+.jumbotron .lead {
+  opacity: 0;
+  font-size: 0;
+  transition: 1s;
+}
+
+.jumbotron img {
+  opacity: 0;
+  margin-top: -50px;
+  transition: 2s;
+}
+
+.jumbotron .display-4.jMunculD {
+  opacity: 1;
+  font-size: 60px;
+}
+
+.jumbotron .lead.jMunculL {
+  opacity: 1;
+  font-size: 25px;
+}
+
+.jumbotron img.jMunculI {
+  opacity: 1;
+  margin-top: 0;
+}
